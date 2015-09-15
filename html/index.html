@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+
+select {
+  
+   width: 158px;
+   padding: 10px;
+   font-size: 16px;
+   font-family: Lato, Arial;
+   line-height: 3;
+   border: 3;
+   border-radius: 0;
+   height: 34px;
+   float: center;
+      }
+
+.label {
+    font-family: Lato, Arial;
+    width: 158px;
+
+    text-align: center;
+    display: block;
+    float:left;
+}
+		</style>
+
+<!-- <script type="text/javascript" src="twitter_engagement.js"></script> -->
+
+
+	</head>
+	<body>
+<!-- <script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script> -->
+
+
+<div id="controls" style="margin: 0 auto; width: 600px;">
+<div style="height: 25px; margin: 0 auto; width: 600px;"> 
+    <div class='label'>Stat</div>
+    <div class='label'>League</div>
+    <div class='label'>Division</div>
+</div>
+
+<div style="height: 25px; margin: 0 auto 25px; width: 600px;">
+<select id='stat' name='stat'>
+  <option value="poff">Making Playoffs</option>
+  <option value="wc">Wild Card Berth</option>
+  <option value="div">Win Division</option>
+  <option value="win_pct">Win Pct</option>
+  <option value="exp_w">Expected Win</option>
+  <option value="w">Wins</option>
+  <option value="doff">Make LDS</option>
+  <option value="ds">Win LDS</option>
+  <option value="cs">Win LCS</option>
+  <option value="ws">Win WS</option>
+
+</select>
+<select id='lg'>
+  <option value="NL">NL</option>
+  <option value="AL">AL</option>
+</select>
+<select id='div' class='seasonSelect'>
+  <option value="E">East</option>
+  <option value="C">Central</option>
+  <option value="W">West</option>
+</select>
+</div>
+
+</div>
+<div id="container" style="width: 900px; height: 600px; margin: 0 auto"></div>
+<div id="container2" style="width: 600px; height: 400px; margin: 0 auto"></div>
+
+
+
+
+
+
+	</body>
+</html>
